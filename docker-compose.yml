@@ -1,0 +1,40 @@
+services:
+  item-service:
+    build: ./item
+    container_name: item-service
+    ports:
+      - "8081:8081"
+    networks:
+      - microservices-net
+
+  order-service:
+    build: ./order
+    container_name: order-service
+    ports:
+      - "8082:8082"
+    networks:
+      - microservices-net
+
+  payment-service:
+    build: ./payment2
+    container_name: payment-service
+    ports:
+      - "8083:8083"
+    networks:
+      - microservices-net
+
+  api-gateway:
+    build: ./gateway2
+    container_name: api-gateway
+    ports:
+      - "8086:8086"
+    depends_on:
+      - item-service
+      - order-service
+      - payment-service
+    networks:
+      - microservices-net
+
+networks:
+  microservices-net:
+    driver: bridge
