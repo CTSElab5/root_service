@@ -7,3 +7,6 @@
 [submodule "item"]
 	path = item
 	url = https://github.com/CTSElab5/item_Service.git
+[submodule "order"]
+	path = order
+	url = https://github.com/CTSElab5/order_Service.git
