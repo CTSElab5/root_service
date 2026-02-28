@@ -1,0 +1,6 @@
+[submodule "gateway-service"]
+	path = gateway-service
+	url = https://github.com/CTSElab5/gateway_Service.git
+[submodule "gateway2"]
+	path = gateway2
+	url = https://github.com/CTSElab5/gateway_Service.git
