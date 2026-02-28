@@ -10,3 +10,6 @@
 [submodule "order"]
 	path = order
 	url = https://github.com/CTSElab5/order_Service.git
+[submodule "payment2"]
+	path = payment2
+	url = https://github.com/CTSElab5/payment_service.git
